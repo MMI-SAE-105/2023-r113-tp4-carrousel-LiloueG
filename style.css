@@ -1,25 +1,17 @@
-/* en vrac :
-100% 100% 100% 0 auto border-box box-sizing 
-display height flex flex none margin 
-max-width width width
-*/ 
 * {
-    /* change le box model */
-    }
-    img {
-      /* image responsive, largeur maxi */
-      /* hauteur "auto" */
-    }
-    .carrousel_parent-ecrans {
-      /* aligne horizontalement les enfants */
-      /* largeur du parent */
-    
-    }
-    .carrousel_ecran {
-      /* largeur du parent pour chaque enfant */
-      /* permet de garder toute la largeur du parent */
-    }
-    .carrousel_ecran figure {
-      /* enlève les marges par défaut */
-    }
-    
+  box-sizing: border-box; 
+}
+
+img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.carrousel_parent-ecrans {
+  display: flex; 
+  width: 100%; 
+}
+
+.carrousel_ecran {
+  flex: 0 0 100%;
+}

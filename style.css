@@ -11,6 +11,7 @@ img {
   display: flex; 
   width: 100%; 
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
 .carrousel_ecran {

@@ -13,13 +13,13 @@
     <header>
         <h1>Test carrousel en CSS + Alpinejs</h1>
     </header>
-    <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+    <div class="carrousel" x-data="{hrefCourant: 1,}">
         <div class="carrousel_picture">
             <div class="carrousel_button">
-                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedent"  @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth">
+                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedent"  @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth; hrefCourant = Math.max(1, hrefCourant - 1)">
                     <
                 </button>
-                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"  @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth">
+                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"  @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth; hrefCourant = Math.min(5, hrefCourant + 1)">
                     >
                 </button>
             </div>
@@ -56,21 +56,21 @@
                 </div>
             </div>
         </div>
-        
+
         <ul class="carrousel_liste-liens">
-            <li><a href="#ecran-1" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-1'}" @click="hrefCourant = '#ecran-1'">
+            <li><a href="#ecran-1" class="carrousel_lien" :class="{actif:hrefCourant===1}" @click="hrefCourant = 1">
                 ecran 1
             </a></li>
-            <li><a href="#ecran-2" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-2'}" @click="hrefCourant = '#ecran-2'">
+            <li><a href="#ecran-2" class="carrousel_lien" :class="{actif:hrefCourant===2}" @click="hrefCourant = 2">
                 ecran 2
             </a></li>
-            <li><a href="#ecran-3" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-3'}" @click="hrefCourant = '#ecran-3'">
+            <li><a href="#ecran-3" class="carrousel_lien" :class="{actif:hrefCourant===3}" @click="hrefCourant = 3">
                 ecran 3
             </a></li>
-            <li><a href="#ecran-4" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-4'}" @click="hrefCourant = '#ecran-4'">
+            <li><a href="#ecran-4" class="carrousel_lien" :class="{actif:hrefCourant===4}" @click="hrefCourant = 4">
                 ecran 4
             </a></li>
-            <li><a href="#ecran-5" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-5'}" @click="hrefCourant = '#ecran-5'">
+            <li><a href="#ecran-5" class="carrousel_lien" :class="{actif:hrefCourant===5}" @click="hrefCourant = 5">
                 ecran 5
             </a></li>
         </ul>

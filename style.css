@@ -25,13 +25,13 @@ figure{
   flex: none;
 }
 
-.carrousel {
+.carrousel_picture {
   position: relative;
 }
 
 .carrousel_btn {
   position: absolute;
-  top: calc(100vw / 16 * 9 / 2 + 1rem);
+  top: 45%;
   width: 2rem;
   height: 2rem;
   background: rgba(0,0,0,0.5);
@@ -40,6 +40,7 @@ figure{
   display: grid;
   place-content: center;
   color: #fff;
+  cursor: pointer;
 }
 
 .carrousel_btn-avant {
@@ -61,4 +62,4 @@ figure{
 
 .carrousel_liste-liens a.actif {
   color: green;
-}
+} 

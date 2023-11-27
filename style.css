@@ -13,14 +13,13 @@ img {
 
 .carrousel_parent-ecrans {
   display: flex; 
-  width: 100%; 
   overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+  gap: 10px;
 }
 
 .carrousel_ecran {
-  width: 100%;
   flex: none;
 }
 

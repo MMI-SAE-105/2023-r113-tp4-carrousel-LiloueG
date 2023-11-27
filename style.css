@@ -21,6 +21,7 @@ figure{
 
 .carrousel_ecran {
   scroll-snap-align: start;
+  width: 100%;
   flex: none;
 }
 
@@ -30,8 +31,8 @@ figure{
 
 .carrousel_btn {
   position: absolute;
-  top: 50%; /* centre verticalement */
-  transform: translateY(-50%); /* methode du point mort */
+  top: calc(100vw / 16 * 9 / 2 + 1rem);
+  transform: translateY(-50%); 
   width: 2rem;
   height: 2rem;
   background: rgba(0,0,0,0.5);

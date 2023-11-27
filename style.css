@@ -7,7 +7,7 @@ img {
   height: auto;
 }
 
-.figure{
+figure{
   margin: 0;
 }
 
@@ -15,11 +15,12 @@ img {
   display: flex; 
   overflow-x: scroll;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
   gap: 10px;
 }
 
 .carrousel_ecran {
+  scroll-snap-align: start;
   flex: none;
 }
 

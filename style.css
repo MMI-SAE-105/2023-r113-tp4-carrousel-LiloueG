@@ -16,7 +16,8 @@ img {
 }
 
 .carrousel_ecran {
-  flex: 0 0 100%;
+  width: 100%;
+  flex: none;
 }
 
 .carrousel {

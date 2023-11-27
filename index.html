@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header>
+        <h1>Test carrousel en CSS + Alpinejs</h1>
+    </header>
     <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
         <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedent"  @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth">
             <

@@ -91,6 +91,18 @@ img {
   gap: 1rem;
 }
 
+.carrousel_liste-liens li {
+  gap: 1rem;
+  padding: 10px 20px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.carrousel_liste-liens a{
+  color: #fff;
+  font-family: Playfair Display;
+  text-decoration: none;
+}
 .carrousel_liste-liens a.actif {
-  color: green;
+  color: rgb(217, 217, 104);
 }

@@ -1,8 +1,13 @@
-/*Raleway Font*/
+/*Work Sans Font*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  Height: 0px;
 }
 
 header, h1 {
@@ -19,6 +24,7 @@ header {
 
 body {
   height: 100vh;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
   gap: 120px;
@@ -31,7 +37,7 @@ img {
 }
 
 .carrousel {
-    width: 100vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,15 +67,14 @@ img {
 .carrousel_btn {
   position: absolute;
   top: 45%;
-  width: 2rem;
-  height: 2rem;
-  background: rgba(0,0,0,0.5);
   border-radius: 50%;
+  background: none;
   border: none;
   display: grid;
   place-content: center;
-  color: #fff;
+  color: #FFFFFF;
   cursor: pointer;
+  font-size: 36px;
 }
 
 .carrousel_btn-avant {
@@ -91,10 +96,16 @@ img {
 }
 
 .carrousel_liste-liens li {
-  gap: 1rem;
   padding: 10px 20px;
   background-color: black;
   border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .carrousel_liste-liens a{
